@@ -169,7 +169,7 @@ class Registration extends Buddies
                 //Get user mail data
                 $arMailData = [
                     'obUser'   => $obUser,
-                    'site_url' => env('SITE_URL'),
+                    'site_url' => config('app.url'),
                 ];
 
                 $sUserEmail = $obUser->email;
